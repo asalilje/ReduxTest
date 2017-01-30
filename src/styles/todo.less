@@ -1,0 +1,34 @@
+.todo {
+    &List {
+        width: 320px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &Item {
+        padding: 5px;
+        cursor: pointer;
+
+        &:nth-of-type(odd) {
+            background-color: #dcdcdc;
+        }
+
+        &:nth-of-type(even) {
+            background-color: #bfa8c1;
+        }
+
+        &Done {
+            text-decoration: line-through;
+        }
+    }
+
+    &Filter {
+        color: black;
+
+        &Active {
+            color: green;
+        }
+    }
+
+}
